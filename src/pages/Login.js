@@ -9,6 +9,7 @@ import {
 
 import Logo from '../components/Logo';
 import Form from '../components/Form';
+import Form1 from '../components/Form1';
 
 import {Actions} from 'react-native-router-flux';
 
@@ -34,7 +35,7 @@ export default class Login extends Component {
 
 const styles = StyleSheet.create({
   container : {
-    backgroundColor:'#455a64',
+    backgroundColor:'#245203',
     flex: 1,
     alignItems:'center',
     justifyContent :'center'

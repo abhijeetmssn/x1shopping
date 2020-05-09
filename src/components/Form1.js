@@ -14,16 +14,30 @@ export default class Logo extends Component {
 			<View style={styles.container}>
           <TextInput style={styles.inputBox} 
               underlineColorAndroid='rgba(0,0,0,0)' 
+              placeholder="Fisrt Name"
+              placeholderTextColor = "#ffffff"
+              selectionColor="#fff"
+              onSubmitEditing={()=> this.password.focus()}
+              />
+          <TextInput style={styles.inputBox} 
+              underlineColorAndroid='rgba(0,0,0,0)' 
+              placeholder="Last Name"
+              placeholderTextColor = "#ffffff"
+              ref={(input) => this.password = input}
+              />
+
+          <TextInput style={styles.inputBox} 
+              underlineColorAndroid='rgba(0,0,0,0)' 
               placeholder="Email"
               placeholderTextColor = "#ffffff"
               selectionColor="#fff"
               keyboardType="email-address"
               onSubmitEditing={()=> this.password.focus()}
               />
-          <TextInput style={styles.inputBox} 
+
+              <TextInput style={styles.inputBox} 
               underlineColorAndroid='rgba(0,0,0,0)' 
               placeholder="Password"
-              secureTextEntry={true}
               placeholderTextColor = "#ffffff"
               ref={(input) => this.password = input}
               />  
